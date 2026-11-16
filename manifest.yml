@@ -1,0 +1,20 @@
+modules:
+  jira:issuePanel:
+    - key: incident-commander-panel
+      title: "🤖 Autonomous SRE Commander"
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel.svg
+      resource: main-resource
+      resolver:
+        function: resolver-fn
+  function:
+    - key: resolver-fn
+      handler: dist/src/index.handler
+resources:
+  - key: main-resource
+    path: static
+app:
+  id: "ari:cloud:ecosystem::app/codegeist-2026-incident-commander"
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work

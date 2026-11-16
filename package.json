@@ -1,0 +1,16 @@
+{
+  "name": "forge-incident-commander",
+  "version": "1.0.0",
+  "description": "Atlassian Forge Autonomous SRE & Jira Incident Commander for Codegeist 2026",
+  "main": "dist/src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "..\\ai-genesis-2026\\node_modules\\.bin\\tsc.cmd",
+    "pretest": "..\\ai-genesis-2026\\node_modules\\.bin\\tsc.cmd",
+    "test": "node --test dist/test/*.test.js",
+    "start": "node dist/src/index.js"
+  },
+  "keywords": ["atlassian", "forge", "jira", "codegeist", "sre", "autonomous-agents"],
+  "author": "Antigravity Agentic Team",
+  "license": "Apache-2.0"
+}
